@@ -112,5 +112,5 @@ alias vscode="/mnt/c/Program\ Files/Microsoft\ VS\ Code/Code.exe"
 alias cmd='cmd.exe'
 source ~/.functions.sh
 user=/mnt/c/Users/kosi_dev/
-alias cli_tests='/mnt/c/Users/kosi_dev/Raman/Workbench/UiTestCLI/UiTestCLI'
 alias junit='cd /mnt/c/Users/kosi_dev/source/repos/junit_composer/test/bin/Debug'
+alias weather='curl v2.wttr.in/AnnArbor'
