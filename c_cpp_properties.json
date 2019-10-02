@@ -1,0 +1,34 @@
+cat << EOF
+{
+    "configurations": [
+        {
+            "name": "Mac",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "/usr/local/Cellar/boost/1.69.0/include/boost",
+                "/Users/brycesmith/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts/boost",
+                "/usr/local/Cellar/boost",
+                "/usr/local/Cellar/boost/1.66.0/include/boost",
+                "/usr/local/Cellar/boost/1.66.0/include/boost/chrono/typeof/boost",
+                "/usr/local/Cellar/boost/1.66.0/include/boost/hana/ext/boost",
+                "/usr/local/Cellar/boost/1.69.0/include/boost",
+                "/usr/local/Cellar/boost/1.69.0/include/boost/chrono/typeof/boost",
+                "/usr/local/Cellar/boost/1.69.0/include/boost/hana/ext/boost",
+                "/usr/local/include/boost",
+                "/usr/local/opt/boost",
+                "/usr/local/var/homebrew/linked/boost"
+            ],
+            "defines": [],
+            "macFrameworkPath": [
+                "/System/Library/Frameworks",
+                "/Library/Frameworks"
+            ],
+            "compilerPath": "/usr/bin/clang",
+            "cStandard": "c11",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "clang-x64"
+        }
+    ],
+    "version": 4
+}
+EOF
