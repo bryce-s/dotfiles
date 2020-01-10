@@ -101,7 +101,7 @@ alias login='cd /mnt/c/Users/kosi_dev'
 alias l='ls -l'
 export http_proxy=http://10.139.68.25:8080
 export https_proxy=http://10.139.68.25:8080
-export no_proxy=localhost,.ncsa.endress.com,192.168.192.*,10.139.73.*
+
 bindkey -v
 source /home/kosi_dev/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source ~/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
