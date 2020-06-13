@@ -1,0 +1,10 @@
+// windows!!
+{
+  "workbench.colorTheme": "Dracula",
+  "vim.handleKeys": {
+    "<C-c>": false,
+    "<C-a>": false,
+    "<C-v>": false,
+    "<C-y>": false,
+  }
+}
