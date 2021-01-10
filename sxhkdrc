@@ -1,0 +1,46 @@
+ cat 
+# Reload functions
+super + Escape
+        "$XDG_CONFIG_HOME"/sxhkd/functions
+
+# Close window
+ctrl + q
+        bspc  node -c
+
+# Show keybindings
+super + F1
+        $TERMINAL -e keybindings.sh
+
+# select window in direction
+alt + {h,j,k,l}
+  bspc node -f {west, south, north, east}
+
+# swap window in direction
+alt + shift + ctrl + {h,j,k,l}
+  bspc node -s {west, south, north, east}
+
+# expand a window by moving one of its side outward
+ctrl + alt + {h,j,k,l}
+  bspc node -z {left -25 0,bottom 0 25,top 0 -25,right 25 0}
+
+alt + shift + f
+  bspc node -t fullscreen
+
+alt + shift + t
+  bspc node -t tiled
+
+alt + c
+  copyq show
+
+# focus or send to the given desktop
+# super + {_,shift + }{1-9,0}
+#       bspc {desktop -f,node -d} '^{1-9,10}'
+
+
+# focus n-th desktop
+ctrl + {1-9}
+  bspc desktop -f '^{1-9}' 
+
+# send active window to n-th desktop
+ctrl + shift + {1-9}
+  bspc node -d '^{1-9}'
