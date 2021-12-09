@@ -155,9 +155,6 @@ export GOPATH=/Users/brycesmith/Files/491/bryces.gnoma.2
 export PATH="/usr/local/bin:$PATH"
 
 export files=/Users/brycesmith/Files
-notelab=/Users/brycesmith/Files/notelab
-export NOTELAB_BOTO_ACCESS_KEY=AKIAJGXVACB4ZSYSK6UQ
-export NOTELAB_BOTO_SECRET_KEY=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
 
 export FLASK_APP=/Users/brycesmith/Files/notelab/run.py:notelab
 
