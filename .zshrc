@@ -161,3 +161,26 @@ export FLASK_APP=/Users/brycesmith/Files/notelab/run.py:notelab
 
 alias chrome="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome"
 source "$(brew --prefix)/etc/profile.d/z.sh"
+source "/Users/brycesmith/Files/z/z.sh"
+
+if type brew &>/dev/null; then
+  FPATH=$(brew --prefix)/share/zsh-completions:$FPATH
+
+  autoload -Uz compinit
+  compinit
+fi
+
+typeset -A ZSH_HIGHLIGHT_STYLES
+ZSH_HIGHLIGHT_STYLES[unknown-token]='fg=160'
+ZSH_HIGHLIGHT_STYLES[suffix-alias]=fg=cyan,underline
+ZSH_HIGHLIGHT_STYLES[precommand]=fg=cyan,underline
+ZSH_HIGHLIGHT_STYLES[arg0]=fg=cyan
+
+export GREP_OPTIONS='--color=auto'
+
+source /Users/brycesmith/Files/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+bindkey -v
+
+
+
